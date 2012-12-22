@@ -1,8 +1,15 @@
 ---
 layout: default
 ---
+<div class="full">
+  <nav class="center-align"><a href="/">← Back</a></nav>
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+  </div>
+  
+  {{ content }}
 
-<div class="page-header">
-  <h1>{{ page.title }}</h1>
+  <div class="date center-align">
+    {{ page.date | date: "%d %B %Y" }}
+  </div>
 </div>
-    {{ content }}

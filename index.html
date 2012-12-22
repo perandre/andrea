@@ -2,38 +2,16 @@
 layout: default
 title: Andrea Wahlberg
 ---
-<!--
-{% for post in site.posts limit:4 %}
-<h2>
-    <a href="/" rel="bookmark" title="Permanent link to ">{{ post.title }}</a>
-</h2>
-<p>
-    {{ post.content }}
-</p>
-{% endfor %}
- -->
 <h1><a href="/">Andrea Wahlberg</a></h1>
 
 <div id="pattern" class="pattern">
   <ul class="g">
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a>
-    <div class="caption">
-      <h2>Nice description</h2>
-      <p>Nice stuff here. Oh yeah here. Nice stuff. Oh yeah.
-      </p>
-    </div>
-
-    </li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-    <li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
+    {% for post in site.posts limit:16 %}
+      <li><a href="{{ post.url }}">{{ post.content }}</a>
+        <!-- <div class="caption">
+          <h2>{{ post.title }}</h2>
+        </div> -->
+      </li>
+    {% endfor %}
   </ul>
 </div>
