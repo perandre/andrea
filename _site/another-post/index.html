@@ -21,6 +21,15 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/nb_NO/all.js#xfbml=1&appId=114935095321500";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
 
     <div class="container">
       
@@ -29,12 +38,17 @@
   <div class="page-header">
     <h1>Fet tegning</h1>
   </div>
-  
+
   <img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" />
 
   <div class="date center-align">
     22 December 2012
   </div>
+
+  <div class="social center-align">
+    <div class="fb-like" data-href="http://perandre.github.com/andrea" data-send="false" data-width="335" data-show-faces="true"></div>
+  </div>
+
 </div>
 
       <footer>
