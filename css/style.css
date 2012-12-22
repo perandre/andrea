@@ -228,10 +228,19 @@ h1 a:hover, h2 a:hover, h3 a:hover {
   text-shadow: 2px 1px 2px #000;
 }
 
+img {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+   -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+}
+
 footer {
   text-align: center;
-  color: #bbb;
   margin-top: 50px;
+}
+
+footer a {
+  color: #ddd;
 }
 
 .full h1 {
