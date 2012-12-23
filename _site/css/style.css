@@ -229,9 +229,9 @@ h1 a:hover, h2 a:hover, h3 a:hover {
 }
 
 img {
-  -webkit-box-shadow: 0 8px 6px -6px black;
-   -moz-box-shadow: 0 8px 6px -6px black;
-        box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 6px 6px -6px black;
+   -moz-box-shadow: 0 6px 6px -6px black;
+        box-shadow: 0 6px 6px -6px black;
 }
 
 footer {
@@ -262,7 +262,7 @@ nav {
 
 .date {
   margin: 10px;
-  color: #bbb;
+  color: #555;
 }
 
 
