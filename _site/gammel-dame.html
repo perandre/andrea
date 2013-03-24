@@ -9,32 +9,29 @@
     <meta name="language" content="norwegian">
     <link href="./css/style.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-
   </head>
-
   <body>
-    <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/nb_NO/all.js#xfbml=1&appId=114935095321500";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      </script>
-
     <div class="container">
-      
-      <div class="full">
+
+      <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/nb_NO/all.js#xfbml=1&appId=114935095321500";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+<div class="full">
   <nav class="center-align"><a href="/">← Back</a></nav>
   <div class="page-header">
     <h1>Gammel dame</h1>
@@ -61,17 +58,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script> 
     <script>
-  $(function(){
+    $(function(){
 
-    var $container = $('#art');
-  
-    $container.imagesLoaded( function(){
-      $container.masonry({
-        itemSelector : '.piece'
+      var $container = $('#art');
+
+      $container.imagesLoaded( function(){
+        $container.masonry({
+          itemSelector : '.piece'
+        });
       });
+
     });
-  
-  });
     </script>   
   </body>
 </html>
