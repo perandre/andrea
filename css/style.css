@@ -239,10 +239,6 @@ footer {
   margin-top: 30px;
 }
 
-footer a {
-  color: #ddd;
-}
-
 .full h1 {
   font-size: 2em;
   margin-bottom: 20px;
@@ -276,4 +272,11 @@ nav {
 }
 
 #art {
+}
+
+
+/*Custom responsive*/
+
+@media (min-width: 900px) {
+
 }
