@@ -313,8 +313,11 @@ button.gamma-btn-sspause:before {
 
 }
 
-
 .footer {
   text-align: center;
-  padding: 15px;
+  margin: 15px;
+}
+
+.social-fb {
+  text-align: center;
 }
