@@ -1,0 +1,282 @@
+/************Reset**************/
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+html, body, div, object, iframe, fieldset { 
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+} 
+ol, ul { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+}
+header, footer, nav, section, article, hgroup, figure {
+  display: block; 
+}
+legend {
+  display: none;
+}
+/************End Reset**************/
+
+/************Global**************/
+body {
+  background: url(../img/wavegrid.png) 0 0 repeat;
+  color: #000;
+  font: 100%/1.4 "Josefin Sans", "HelveticaNeue", "Arial", sans-serif;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+a {
+  color: #808080;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #ff3399;
+}
+p {
+  margin: 0 0 1em;
+}
+img, object, video {
+  max-width: 100%;
+  border: 0;
+}
+a img {
+  border: 0;
+  outline: 0;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2em;
+  text-align: center;
+  margin-top: 0.4em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 0.2em;
+}
+h3 {
+  font-weight: normal;
+  line-height: 1.1;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #ccc;
+}
+h1 a, h2 a, h3 a {
+  display: block;
+  color: #111;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: #ff3399;
+}
+
+/*Grid*/
+.grid {
+  margin: 0 -1em;
+  overflow: hidden;
+}
+.grid ul {
+  overflow: hidden;
+}
+.grid ul li {
+  margin-bottom: 0.3em;
+}
+
+/*Fluid*/
+.fluid {
+  display: block;
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+/******Media Queries*******/
+
+/* Medium Screens*/
+@media all and (min-width: 35em) {
+  .blog-logo {
+    float: left;
+    font-size: 2em;
+    margin: 0 0 1em;
+  }
+  .blog-logo img {
+    width: auto;
+  }
+}
+@media all and (min-width:40em) {
+  .grid ul li {
+    width: 50%;
+    float: left;
+  }
+  .grid ul li:nth-child(odd) {
+    padding-right: 1em;
+    clear: left;
+  }
+}
+
+
+/* Large Screens */
+@media all and (min-width: 54em) {
+  h1 {
+    font-size: 6.4em;
+  }
+  .grid > section {
+    float: left;
+    width: 33.3333333%;
+  }
+  .grid > section:nth-of-type(3n+1) {
+    clear: left;
+  }
+  .grid ul li {
+    width: auto;
+    float: none;
+  }
+  .grid ul li:nth-child(odd) {
+    padding-right: 0;
+  }
+} 
+
+.g {
+  padding: 0.25em;
+  overflow: hidden;
+}
+.g li {
+  float: left;
+  width: 50%;
+  padding: 0.25em;
+}
+.g img {
+  display: block;
+}
+.g li:nth-child(odd) {
+  clear: left;
+}
+
+@media screen and (min-width: 40em) {
+  .g li {
+    width: 33.3333333333333333%; 
+  }
+  .g li:nth-child(3n+1) {
+    clear: left;
+  }
+  .g li:nth-child(odd) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 55em) {
+  .g li {
+    width: 25%; 
+  }
+  .g li:nth-child(4n+1) {
+    clear: left;
+  }
+  .g li:nth-child(3n+1) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 72em) {
+  .g li {
+    width: 20%; 
+  }
+  .g li:nth-child(5n+1) {
+    clear: left;
+  }
+  .g li:nth-child(4n+1) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 90em) {
+  .g li {
+    width: 16.666666666%; 
+  }
+  .g li:nth-child(6n+1) {
+    clear: left;
+  }
+  .g li:nth-child(5n+1) {
+    clear: none;
+  }
+}
+
+/* --- Custom --- */
+.center-align {
+  text-align: center;
+}
+
+/* Grid */
+.caption {
+  text-align: center;
+  margin-top: -100%;
+  padding: 5px;
+  width: 100%;
+  color: #fff;
+  overflow: auto;
+}
+
+.caption:hover {
+  visibility: visible;
+}
+
+.caption h2, .caption p {
+  text-shadow: 2px 1px 2px #000;
+}
+
+.piece img {
+  -webkit-box-shadow: 1px 0px 3px 2px #ccc;
+   -moz-box-shadow: 1px 0px 3px 2px #ccc;
+        box-shadow: 1px 0px 3px 2px #ccc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.full h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.full img {
+  display: inline-block;
+  float: none;
+  width: 100%;
+  max-width: 1024px;;
+}
+
+.piece-full {
+  text-align: center;
+}
+
+.piece-full img {
+  -webkit-box-shadow: 1px 0px 2px 3px #DDD;
+   -moz-box-shadow: 1px 0px 2px 3px #DDD;
+        box-shadow: 1px 0px 2px 3px #DDD;
+}
+
+nav {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.date {
+  margin: 10px;
+  color: #555;
+}
+
+#art {
+}
+
+
+/*Custom responsive*/
+
+@media (min-width: 900px) {
+
+}
